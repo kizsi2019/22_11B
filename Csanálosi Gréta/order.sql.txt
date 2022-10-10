@@ -1,0 +1,19 @@
+1 feladat 
+SELECT SupplierName, Country FROM [Supplies]
+WHERE Country = "USA" OR Country = "UK";
+
+SELECT SupplierName, Country FROM [Supplies]
+WHERE Country = "USA" AND (City = "Boston" OR City = "New Orleans");
+
+SELECT SupplierName, Country FROM [Supplies]
+WHERE NOT Country = "Japan" OR NOT Country = "Canada";
+
+2.feladat
+SELECT ProductName, Price FROM [Products]
+ORDER BY Price;
+
+SELECT ProductName, Price FROM [Products]
+ORDER BY Price DESC;
+
+SELECT ProductName, Unit FROM [Products]
+ORDER BY ProductName ASC, Unit DESC;
