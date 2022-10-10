@@ -1,0 +1,8 @@
+1. INSERT INTO Categories (CategoryName, Description)
+VALUES ("Drinks", "Teas", "Coffes", "Beers");
+
+2. INSERT INTO Categories (CategoryName)
+VALUES ("Foods");
+
+3. SELECT * FROM [Categories]
+WHERE Description IS NULL;

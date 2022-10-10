@@ -1,0 +1,11 @@
+1.feladat
+INSERT INTO Categories (CategoryName, Description)
+VALUES ("Drinks","Teas, Coffees, Beers");
+
+2 feladat
+INSERT INTO Categories (CategoryName)
+VALUES ("Foods")
+
+3 feladat
+ SELECT * FROM [Categories]
+WHERE Description IS NULL;
