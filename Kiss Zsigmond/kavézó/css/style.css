@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Raleway&display=swap');
+body {
+    background-color: #e9eba0;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+nav {
+    background-color: #1f8616;
+    margin: 15px;
+    position: fixed;
+}
+
+nav a {
+    color: #fff;
+    margin: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:first-child {
+    font-size: 1.5em
+}
+
+nav a:first-child img {
+    width: 40px;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+}
