@@ -1,4 +1,4 @@
 a:SELECT MIN(standard_cost) AS Legolcsóbb FROM products;
 b:SELECT MAX(standard_cost) AS Legnagyobb FROM products;
 c:SELECT MAX(standard_cost) AS Legnagyobb FROM products WHERE list_price = 30;
-d:SELECT MAX(standard_cost) FROM products WHERE product_code LIKE 'CO%';
+d:SELECT MAX(standard_cost) FROM products WHERE product_code LIKE '%CO%';
