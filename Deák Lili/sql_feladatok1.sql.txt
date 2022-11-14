@@ -1,0 +1,6 @@
+1 feladat
+
+a, SELET AVG(standard_cost): AS átlag FROM 'products'
+b, SELET AVG(list_price): AS átlag FROM 'products' WERE list_price < 30;
+c, SELET AVG(list_price): AS átlag FROM 'products' WERE category like 'Sauces'
+d, 
