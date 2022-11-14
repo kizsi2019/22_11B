@@ -1,0 +1,5 @@
+1 feladat 
+
+SELECT AVG(standard_cost) AS átlag FROM `products`
+SELECT AVG(list_price) AS átlag FROM `products` WHERE list_price < 30;
+SELECT SUM(list_price) AS átlag FROM `products` WHERE category like< '%Sauces%'
