@@ -1,0 +1,8 @@
+SQL FÜGGVÉNYEK
+1.feladat
+A.
+SELECT AVG(standard_cost) AS átlag FROM products
+B.
+SELECT AVG(standard_cost) AS átlag FROM products WHERE list_price <30;
+C.
+SELECT AVG(standard_cost) AS átlag FROM products WHERE category like 'Sauces'
