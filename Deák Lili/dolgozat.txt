@@ -1,0 +1,5 @@
+1, 
+a, SELECT MIN(standard_cost) AS Legkisebb FROM products;
+b, SELECT MAX(standard_cost) AS Legnagyobb FROM products;
+c, SELECT MAX(standard_cost) FROM products WHERE list_price <= 30;
+d,SELECT MAX (standars_cost) FROM products WHERE products_code LIKE '%C0%';
