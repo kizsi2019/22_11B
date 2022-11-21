@@ -1,0 +1,4 @@
+A.SELECT MIN(standard_cost) FROM products;
+B.SELECT MAX(standard_cost) FROM products
+C.SELECT*FROM Products WHERE list_price > 30;
+D.

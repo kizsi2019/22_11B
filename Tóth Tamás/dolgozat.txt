@@ -1,0 +1,5 @@
+1,
+a,SELECT MIN(standard_cost) AS legkisebb FROM products;
+b,SELECT MAX(standard_cost) AS legnagyobb FROM products;
+c,SELECT MAX(standard_cost) FROM products WHERE list_price <=30;
+d,SELECT MAX(standard_cost) FROM products WHERE product_code LIKE '%CO%';
