@@ -26,3 +26,20 @@ FROM film, kapcsolat, keszito
   GROUP BY keszito.nev
   HAVING COUNT(film.id)>1;
 7,feladat
+SELECT DISTINCT keszito.nev
+FROM keszito, kapcsolat
+WHERE keszito.id=kapcsolat.keszitoid AND kapcsolat.filmid IN (
+    SELECT kapcsolat.filmid FROM kapcsolat, keszito
+    WHERE keszito.id=kapcsolat.keszitoid AND nev="Clint Eastwood")
+AND nev <> "Clint Eastwood";
+8,feladat
+SELECT keszito.nev
+FROM keszito
+WHERE keszito.id NOT IN
+  (
+SELECT kapcsolat.keszitoid
+FROM kapcsolat, film
+WHERE kapcsolat.filmid=film.id
+AND film.bemutato IS NOT NULL
+   )
+ AND keszito.producer;
