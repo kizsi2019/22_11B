@@ -9,9 +9,9 @@ FROM keverek
 ORDER BY 2 DESC
 LIMIT 1;
 4,feladat
-SELECT COUNT(keverekid) AS Darab
+SELECT COUNT(keverek.id) AS Darab
 FROM osszetevo, kapcsolat
-WHERE id = osszetevoid AND nev='bazsalikom';
+WHERE keverek.id = kapcsolat.osszetevoid AND nev='bazsalikom';
 5,feladat
 SELECT TOP 1 nev, COUNT(osszetevo.id AS összetevők_száma
 FROM keverek, kapcsolat
