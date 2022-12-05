@@ -3,9 +3,11 @@ SELECT alloviz.nev, alloviz.terulet
 FROM alloviz
 WHERE alloviz.nev LIKE "%morotva%"
 ORDER BY alloviz.terulet DESC
+
 3.
 SELECT SUM(alloviz.terulet)/93036 AS vízfelület_aránya
 FROM alloviz;
+
 4.
 SELECT alloviz.nev, alloviz.tipus, alloviz.terulet
 FROM alloviz
