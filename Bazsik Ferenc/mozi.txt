@@ -1,0 +1,80 @@
+1. feladat
+
+INSERT INTO vetites (azon,mozinev,fkod)
+VALUES (365,'Művész',2)
+
+2. feladat
+
+UPDATE filmek
+SET filmek.hossz = 110
+WHERE filmek.fkod = 3;
+
+3. feladat
+
+DELETE FROM filmek WHERE filmek.filmcim = 'Film'
+
+4. feladat
+
+SELECT filmek.filmcim, filmek.mufaj, filmek.hossz
+FROM filmek;
+
+5. feladat
+
+SELECT filmek.filmcim, filmek.szarmazas
+FROM filmek
+ORBER BY filmek.szarmazas;
+
+6. feladat 
+
+SELECT filmek.filcim, filmek.hossz 
+FROM filmek
+WHERE filmek.mufaj LIKE %dokkumentum%
+ORDER BY filmek.hossz DESC;
+
+7. feladat
+
+SELECT filmek.filcim, filmek.hossz
+FROM filmek 
+WHERE filmek.szarmazas LIKE %amerikai%;
+
+8. feladat
+
+SELECT filmek.filcim, filmek.mufaj 
+FROM filmek
+WHERE filmek.szinkron LIKE %mb%;
+
+9. feladat
+
+
+
+10. feladat
+
+SELECT filmek.filcim ó, filmek.szarmazas 
+FROM filmek
+WHERE filmek.szarmazas
+LIKE %angol%;
+
+11. feladat 
+
+SELECT filmek.filcim, filmek.hossz 
+FROM filmek 
+WHERE filmek.filcim 
+LIKE 'b%';
+
+12. feladat 
+
+SELECT filmek.filcim, filmek.mufaj 
+FROM filmek 
+WHERE filmek.hossz BEETWEEN 90 AND 120;
+
+13. feladat 
+
+SELECT filmek.filmcim, filmek.mufaj 
+FROM filmek 
+ORDER BY filmek.hossz DESC LIMIT 5;
+
+14. feladat 
+
+SELECT filmek.filcim, filmek.mufaj 
+FROM filmek 
+ORDER BY filmek.hossz LIMIT 10;
