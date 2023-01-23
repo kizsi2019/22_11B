@@ -1,0 +1,58 @@
+1. INSERT INTO vetites (azon,mozinev,fkod)
+   VALUES (356,'Művész',2)
+
+2.
+UPDATE filmek
+SET filmek.hossz = 110
+WHERE filmek.fkod = 3; 
+
+3.
+DELETE FROM filmek WHERE filmcim='Film';
+
+4.
+SELECT filmek.filmcim, filmek.mufaj,filmek.hossz
+FROM filmek
+
+5.
+SELECT filmek.filmcim, filmek.szarmazas 
+FROM filmek
+ORDER BY filmek.filmcim ASC; 
+
+6.
+SELECT filmek.filmcim, filmek.hossz
+FROM filmek
+WHERE filmek.mufaj LIKE '%dokumentum%';
+ORDER BY filmek.hossz DESC;
+
+7.
+SELECT filmek.filmcim, filmek.hossz
+WHERE filmek.szarmazas
+LIKE '%amerikai%';
+
+8.
+SELECT filmek.filmcim, filmek.mufaj 
+FROM filmek
+WHERE filmek.szarmazas 
+LIKE '%angol%';
+
+10.
+SELECT filmek.filmcim; filmek.szarmazas
+FROM filmek
+WHERE filmek.szarmazas
+LIKE '%angol%'
+
+11.
+SELECT filmek.filcim, filmek.hossz 
+FROM filmek
+WHERE filmek.filmcim
+LIKE '%b%'
+
+12.
+SELECT filmek.filcim, filmek.mufaj
+FROM filmek
+WHERE filmek.hossz 
+BETWEEN 90 and 120;
+
+
+13.order by hossz desc limit 5
+ SELECT FILMEK WHERE SZARMAZAS LIKE IDEZOJELAMERIKAI SZAZALEK
