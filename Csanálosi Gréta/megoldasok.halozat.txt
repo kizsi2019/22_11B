@@ -1,0 +1,40 @@
+﻿-- A feladatok megoldására elkészített SQL parancsokat illessze be a feladat sorszáma után!
+
+
+-- 10. feladat:
+CREATE DATABASE halozat 
+DEFAULT CHARSET = utf8
+COLLATE utf8_hungarian_ci;
+
+-- 12. feladat:
+INSERT INTO megallokVALUES(198, "Kőbányás garázs")
+
+-- 13. feladat:
+UPDATE jaratokset jaratok.elsoajtos = 0
+WHERE jaratok.id = 20
+
+-- 14. feladat:
+SELECT jaratok.jaratszam
+FROM jaratok
+WHERE jaratok.elsoajtos = 1
+
+-- 15. feladat:
+SELECT megallok.nev
+FROM megallok
+WHERE megallok.nev LIKE "%sétány%" ORDER BY 1
+
+ 
+-- 16. feladat:
+SELECT halozat.sorszam, megallok.nev AS "megallo"
+FROM megallok, halozat, jaratok
+WHERE megallok.id = halozat.megallo AND halozat.jarat = jaratok.id
+AND jaratok.jaratszam = "City" AND halozat.irany = "A"
+
+-- 17. feladat:
+SELECT megallok.nev AS "megallo", COUNT(halozat.jarat) AS "jaratokszama"
+FROM megallok, halozat
+WHERE megallok.id = hlozat.megallo
+GROUP BY megallok.nev
+HAVING jaratokszama > 2
+
+
