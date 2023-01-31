@@ -2,7 +2,7 @@
 
 
 -- 1. feladat:
-CREATE DATABASE formula1
+CREATE DATABASE napsutes
 DEFAULT CHARSET = utf8
 COLLATE utf8_hungarian_ci;
 
