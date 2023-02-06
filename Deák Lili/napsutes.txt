@@ -1,0 +1,29 @@
+-- A feladatok megoldására elkészített SQL parancsokat illessze be a feladat sorszáma után!
+
+
+-- 1. feladat:
+CREATE DATABASE napsutes
+	CHARSET utf8
+	COLATE utf8_hungarian_ci;
+
+-- 3. feladat:
+UPDATE regiok 
+   SET regioNev = "Észak-Írország"
+WHERE regioNev = "Észak-Írország";
+
+-- 4. feladat:
+SELECT 
+COUNT(meresek.id) AS rekordszam,
+AVG(meresek.perc) AS atlag
+FROM meresek;
+
+-- 5. feladat:
+
+
+-- 6. feladat:
+SELECT meresek.ev, meresek.perc, regiok.regioNev AS terulet
+FROM meresek
+INNER JOIN regiok
+ON meresek.ho = 2
+AND meresek.perc > 6000
+ORDER BY meresek.perc DESC
